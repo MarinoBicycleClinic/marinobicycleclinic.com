@@ -46,6 +46,14 @@ body {
   content: "";
 }
 
+.alert {
+  padding: 20px;
+  background-color: #2196F3;
+  color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 a {
   color: #66D37E;
   -webkit-transition: 0.5s;
