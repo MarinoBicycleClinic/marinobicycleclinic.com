@@ -62,6 +62,7 @@ h1, h2, h3, h4, h5, h6, figure { color: var(--heading); }
 .theme-toggle[hidden] { display: none; }
 .theme-toggle:hover, .theme-toggle:focus-visible { color: var(--link); }
 .theme-toggle[aria-pressed="true"] { color: var(--link); }
+.menu-toggle { display: none; }
 .fh5co-nav ul { align-items: center; }
 .fh5co-nav { margin-top: 2rem; }
 .fh5co-nav .top-menu { padding: 24px 30px; }
@@ -109,12 +110,32 @@ h1, h2, h3, h4, h5, h6, figure { color: var(--heading); }
   .fh5co-nav { margin-top: 0; }
   .fh5co-nav .top-menu { padding: 20px 16px; }
   .fh5co-nav .top-menu > .row { gap: 12px; }
+  .fh5co-nav .top-menu .col-xs-2 { flex: 1 1 0; min-width: 0; }
+  .fh5co-nav #fh5co-logo { font-size: 20px; }
+  .menu-toggle:not([hidden]) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    cursor: pointer;
+  }
   .fh5co-nav .menu-1 { flex-basis: 100%; }
+  .fh5co-nav.menu-ready .menu-1 { display: none; }
+  .fh5co-nav.menu-ready.menu-open .menu-1 { display: block; }
   .fh5co-nav ul { justify-content: flex-start; }
   .fh5co-nav ul li a { padding: 10px; font-size: 12px; }
   .container-wrap, #fh5co-hero { border-radius: 0; }
   #fh5co-hero .flexslider .slider-text > .slider-text-inner { padding: 2rem 1.5rem; }
   #fh5co-services, #fh5co-contact, #fh5co-work, #fh5co-footer { padding: 3rem 1.5rem; }
+}
+@media (max-width: 360px) {
+  .fh5co-nav #fh5co-logo { font-size: 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
