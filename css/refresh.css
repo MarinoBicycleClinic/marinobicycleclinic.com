@@ -41,6 +41,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   outline-offset: 4px;
 }
 h1, h2, h3, h4, h5, h6, figure { color: var(--heading); }
+.fh5co-heading h2 { color: var(--heading); }
 .container-wrap { background: var(--surface); border-radius: 10px; }
 .fh5co-nav #fh5co-logo a { color: var(--heading); }
 .contact-info li, .contact-info li a, .contact-info li i { color: var(--text); }
