@@ -52,15 +52,15 @@ h1, h2, h3, h4, h5, h6, figure { color: var(--heading); }
   justify-content: center;
   width: 44px;
   height: 44px;
+  margin-left: 12px;
   padding: 0;
-  border: 1px solid var(--border);
-  border-radius: 50%;
+  border: 0;
   background: transparent;
   color: var(--text);
   cursor: pointer;
 }
 .theme-toggle[hidden] { display: none; }
-.theme-toggle:hover, .theme-toggle:focus-visible { color: var(--link); border-color: var(--link); }
+.theme-toggle:hover, .theme-toggle:focus-visible { color: var(--link); }
 .theme-toggle[aria-pressed="true"] { color: var(--link); }
 .fh5co-nav ul { align-items: center; }
 .fh5co-nav { margin-top: 2rem; }
