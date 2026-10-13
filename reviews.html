@@ -3,6 +3,7 @@
 	<head>
 	<meta charset="utf-8">
     <script src="js/theme.js"></script>
+    <script defer src="js/navigation.js"></script>
 	<title>Reviews | Marino Bicycle Clinic in Gretna</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Local Omaha bicycle repair shop" />
@@ -18,7 +19,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 
     <link rel="stylesheet" href="css/style.css?v=theme-2">
-    <link rel="stylesheet" href="css/refresh.css?v=theme-3">
+    <link rel="stylesheet" href="css/refresh.css?v=nav-4">
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -35,7 +36,8 @@
 					<div class="col-xs-2">
 						<div id="fh5co-logo"><a href="index.html">Marino Bicycle Clinic</a></div>
 					</div>
-					<div class="col-xs-10 text-right menu-1">
+					<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" hidden>Menu</button>
+					<div id="primary-menu" class="col-xs-10 text-right menu-1">
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="services.html">Services</a></li>
