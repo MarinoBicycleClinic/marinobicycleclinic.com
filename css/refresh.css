@@ -59,7 +59,8 @@ h1, h2, h3, h4, h5, h6, figure { color: var(--heading); }
   color: var(--text);
   cursor: pointer;
 }
-.theme-toggle[hidden] { display: none; }
+/* Reserve the toggle's space while its initial theme state is set. */
+.theme-toggle[hidden] { visibility: hidden; }
 .theme-toggle:hover, .theme-toggle:focus-visible { color: var(--link); }
 .theme-toggle[aria-pressed="true"] { color: var(--link); }
 .menu-toggle { display: none; }
