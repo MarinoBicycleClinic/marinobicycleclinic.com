@@ -72,7 +72,8 @@ h1, h2, h3, h4, h5, h6, figure { color: var(--heading); }
 .fh5co-nav ul { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px; margin: 0; }
 .fh5co-nav ul li a { display: inline-block; padding: 12px; color: var(--text); }
 .fh5co-nav ul li a:after { bottom: 6px; left: 12px; right: 12px; }
-.fh5co-nav ul li.active > a { color: var(--link); }
+.fh5co-nav ul li.active > a { color: var(--link) !important; }
+.fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus { color: var(--link-hover); }
 /* Every public hero contains a single image: display it without a slider. */
 #fh5co-hero { background: #24372b; float: none; overflow: hidden; border-radius: 10px 10px 0 0; }
 #fh5co-hero .slides { padding: 0; margin: 0; list-style: none; }
